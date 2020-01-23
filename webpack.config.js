@@ -27,14 +27,18 @@ module.exports = {
         use: {
           loader: 'pug-loader'
         }
+      },
+      {
+        test: /\.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/,
+        use: { loader: 'file-loader' }
       }
     ]
   },
   plugins: [
     new CleanWebpackPlugin(),
     new MiniCSSExtractPlugin({
-      template: 'style.sass',
-      filename: 'style.css',
+      template: './src/[name].sass',
+      filename: '[name].css',
     }),
     new HTMLWebpackPlugin({
       template: './src/index.pug',

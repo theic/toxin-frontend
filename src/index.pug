@@ -1,11 +1,15 @@
 doctype html
 html
   head
-    link(rel='stylesheet' href='style.css')
+    link(rel='stylesheet' href='main.css')
   body
 
-    input(class='text-field-default text-field-default-pos' placeholder='Email')
+    input(class='textfield-default textfield-default-pos' placeholder='Email')
 
-    select(class='dropdown-default' placeholder='Сколько гостей')
-    
+    div(class='dropdown-default-wrapper dropdown-default-pos')
+      span(class='material-icons') keyboard_arrow_down
+      select(class='' placeholder='Сколько гостей')
+        - let n = 0
+        while n < 10
+          option= n++
 
