@@ -1,7 +1,7 @@
 {
   "name": "toxin-fontend",
   "version": "1.0.0",
-  "description": "Учебный проект для совершенствования навыков верстки.",
+  "description": "Учусь готовить html.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
