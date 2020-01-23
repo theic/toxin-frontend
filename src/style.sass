@@ -1,2 +1,61 @@
 .greeting
-	color: blue
+  color: blue
+
+$dark-shade-100: #1F2041
+$dark-shade-75: rgba(31, 32, 65, 0.75)
+$dark-shade-50: rgba(31, 32, 65, 0.5)
+$dark-shade-25: rgba(31, 32, 65, 0.25)
+$dark-shade-5: gba(31, 32, 65, 0.05)
+$purple: #BC9CFF
+$green:  #6FCF97
+
+.textfield-default
+  background: #FFFFFF
+  border: 1px solid $dark-shade-25
+  box-sizing: border-box
+  border-radius: 4px
+
+  font-family: Montserrat
+  font-style: normal
+  font-weight: normal
+  font-size: 14px
+  line-height: 18px
+  color: $dark-shade-25
+  padding-left: 15px
+
+  &:hover, &:focus
+    border: 1px solid $dark-shade-50
+    line-height: 24px;
+    color: $dark-shade-75
+
+.text-field-default-pos
+  position: absolute
+  width: 320px
+  height: 44px
+  left: 141px
+  top: 163px
+
+.dropdown-default
+  background: #FFFFFF
+  border: 1px solid $dark-shade-25
+  box-sizing: border-box
+  border-radius: 4px
+
+  font-family: Montserrat
+  font-style: normal
+  font-weight: normal
+  font-size: 14px
+  line-height: 24px
+  color: $dark-shade-75
+
+  -webkit-appearance: none
+
+.dropdown-default-expand
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
